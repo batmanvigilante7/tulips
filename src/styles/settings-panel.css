@@ -1,0 +1,386 @@
+/* Settings Panel - CSS Styling for Desktop Drawer and Mobile Bottom Sheet */
+
+/* Floating Gear Trigger Button */
+.settings-gear-btn {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 40;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-primary);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: auto;
+}
+
+.settings-gear-btn:hover {
+  border-color: rgba(255, 105, 180, 0.3);
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.25);
+  transform: scale(1.05);
+}
+
+.gear-icon {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gear-icon.rotate {
+  transform: rotate(180deg);
+}
+
+/* Backdrop Overlay */
+.settings-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(9, 9, 11, 0.35);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  opacity: 0;
+  z-index: 38;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.settings-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Settings Panel Container */
+.settings-panel {
+  position: fixed;
+  z-index: 39;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+/* Desktop: Right Drawer */
+@media (min-width: 768px) {
+  .settings-panel {
+    top: 0;
+    right: 0;
+    width: 380px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    border-left: 1px solid var(--glass-border);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    transform: translateX(100%);
+  }
+
+  .settings-panel.open {
+    transform: translateX(0);
+  }
+}
+
+/* Mobile: Bottom Sheet */
+@media (max-width: 767px) {
+  .settings-panel {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 80vh;
+    border-radius: 24px 24px 0 0;
+    border-top: 1px solid var(--glass-border);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    transform: translateY(100%);
+  }
+
+  .settings-panel.open {
+    transform: translateY(0);
+  }
+
+  .settings-gear-btn {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+  }
+}
+
+/* Header Section */
+.settings-header {
+  padding: 24px 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.settings-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #ffffff 40%, var(--accent-pink) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.settings-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.settings-close-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Body / Setting Options */
+.settings-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.setting-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.setting-item.flex-row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.setting-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  letter-spacing: 0.1em;
+}
+
+.setting-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.setting-desc {
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  opacity: 0.8;
+}
+
+.setting-val {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-pink);
+  font-family: monospace;
+}
+
+/* Theme Grid */
+.theme-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.theme-chip-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: var(--font-sans);
+  color: var(--text-secondary);
+}
+
+.theme-chip-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: var(--text-primary);
+}
+
+.theme-chip-btn.active {
+  background: rgba(255, 105, 180, 0.12);
+  border-color: var(--accent-pink);
+  color: var(--text-primary);
+}
+
+.theme-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.theme-indicator.sakurapink { background-color: #ff69b4; }
+.theme-indicator.cosmobluedeal { background-color: #00e5ff; }
+.theme-indicator.solargold { background-color: #ffa500; }
+.theme-indicator.auroragreen { background-color: #3d8c53; }
+
+.theme-name {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* Slider Style */
+.setting-slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  margin: 6px 0;
+}
+
+.settings-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent-pink);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+  transition: transform 0.1s ease;
+}
+
+.settings-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.62rem;
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+/* Toggle Switches */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-round {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--glass-border);
+  transition: .3s;
+  border-radius: 34px;
+}
+
+.slider-round:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .3s;
+  border-radius: 50%;
+}
+
+input:checked + .slider-round {
+  background-color: var(--accent-pink);
+  border-color: rgba(255, 105, 180, 0.3);
+}
+
+input:checked + .slider-round:before {
+  transform: translateX(20px);
+}
+
+/* Species Grid */
+.species-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.species-chip-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 8px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: var(--font-sans);
+  color: var(--text-secondary);
+}
+
+.species-chip-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: var(--text-primary);
+}
+
+.species-chip-btn.active {
+  background: rgba(255, 105, 180, 0.12);
+  border-color: var(--accent-pink);
+  color: var(--text-primary);
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.15);
+}
+
+.species-name {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-align: center;
+}
+

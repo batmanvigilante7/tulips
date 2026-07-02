@@ -1,0 +1,18 @@
+{
+  "name": "Bloom AR",
+  "short_name": "Bloom AR",
+  "description": "Camera-first holographic flower AR with hand gestures.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
