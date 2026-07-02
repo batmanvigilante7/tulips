@@ -1,0 +1,61 @@
+[2m4:27:20 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 10:57:20.374000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m4:27:20 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 10:57:20.565000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m4:27:29 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[2m4:27:30 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22musing deprecated parameters for the initialization function; pass a single object instead
+[2m4:27:43 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mCamera access error: NotReadableError: Device in use
+[2m4:27:44 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 10:57:44.896000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m4:27:52 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 10:57:52.468000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m4:27:52 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mCamera access error: NotReadableError: Device in use
+[2m4:27:56 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 10:57:56.118000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m4:27:57 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 10:57:57.346000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m4:27:57 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mCamera access error: NotReadableError: Device in use
+[2m4:27:57 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mCamera access error: NotReadableError: Device in use
+[2m4:27:59 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mCamera access error: NotReadableError: Device in use
+[2m4:28:00 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 10:58:00.007000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m4:28:00 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 10:58:00.978000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m4:28:01 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mCamera access error: NotReadableError: Device in use
+[2m4:28:04 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mCamera access error: NotReadableError: Device in use
+[2m4:28:05 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 10:58:05.126000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m4:28:06 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 10:58:06.758000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m4:28:07 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mCamera access error: NotReadableError: Device in use
+[2m8:01:59 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mInvalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[2m8:01:59 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mInvalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[2m8:01:59 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled error] [1mTypeError[22m: Cannot read properties of null (reading 'useCallback')
+[39m > exports.useCallback node_modules/react/cjs/react.development.js:1204:33
+ > useStore node_modules/.vite/deps/zustand.js?v=44a762f9:8:78
+ > useBoundStore node_modules/.vite/deps/zustand.js?v=44a762f9:14:38
+ > App src/App.tsx?t=1783002663424:15:25
+ > Object.react_stack_bottom_frame node_modules/.vite/deps/react-dom_client.js?v=2a27698c:12619:12
+ > renderWithHooks node_modules/.vite/deps/react-dom_client.js?v=2a27698c:3966:19
+ > updateFunctionComponent node_modules/.vite/deps/react-dom_client.js?v=2a27698c:5322:16
+ > beginWork node_modules/.vite/deps/react-dom_client.js?v=2a27698c:5893:20
+ > runWithFiberInDEV node_modules/.vite/deps/react-dom_client.js?v=2a27698c:604:66
+ > performUnitOfWork node_modules/.vite/deps/react-dom_client.js?v=2a27698c:8182:92
+
+[2m8:01:59 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mAn error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+[2m8:02:00 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 14:32:00.930000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m8:02:01 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 14:32:01.413000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m11:44:35 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 18:14:35.928000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m11:44:36 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 18:14:36.005000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m11:44:39 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[2m11:44:39 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22musing deprecated parameters for the initialization function; pass a single object instead
+[2m11:45:34 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 18:15:34.446000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m11:45:34 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 18:15:34.819000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m11:45:35 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[2m11:45:35 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22musing deprecated parameters for the initialization function; pass a single object instead
+[2m11:46:26 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 18:16:26.133000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m11:46:26 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mW0702 18:16:26.520000 1866800 gl_context.cc:1004] OpenGL error checking is disabled
+[2m11:46:27 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[2m11:46:27 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22musing deprecated parameters for the initialization function; pass a single object instead
