@@ -1,32 +1,30 @@
-# React + TypeScript + Vite
+FLOPs
+======
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+FLOPs (Floral Operators) is a set of HDAs centered around KineFX which simplify the generation and animation of high quality flora.
 
-Currently, two official plugins are available:
+With preset recipes, it is easy to set up complex flower animations ready for render while being open for your custom changes. The toolkit plays well with standard Houdini nodes and allows you to inject and use custom attributes as needed.
+## Installation
+## Step 1: Downloading FLOPs
+Download from GitHub or Gumroad to a location where your Houdini packages live. **Do not** download it directly into your `Documents/houdiniXX.X` folder.
+For example's sake, I have downloaded FLOPs to `G:/HoudiniPackages/FLOPs`
+## Step 2: Loading the package
+Copy `FLOPs.json` into your Houdini preferences packages folder. On Windows the default location for this folder is `Documents/houdiniXX.X/packages`. For example's sake, mine is `C:/Users/Danny/Documents/houdini20.5/packages`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Once `FLOPs.json` is in your packages folder, open it up and change the "FLOPs" variable to the path you downloaded FLOPs to in step 1. In my example, my `FLOPs.json` ends up looking like this:
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
+```
 {
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
+    "path": "$FLOPs",
+    "load_package_once": true,
+    "env": [
+        {
+            "FLOPs": "G:/HoudiniPackages/FLOPs"
+        }
+    ]
 }
 ```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Step 3: Use FLOPs
+Open a new instance of Houdini. Make a Geometry Container. Dive in, hit TAB and look for the FLOPs submenu. If it is there, you installed FLOPs correctly. Drop down a FLOPs Configure Simple Flower to get started quickly.
+### Notice:
+This software is provided AS-IS, with absolutely no warranty of any kind, express or otherwise. We disclaim any liability for damages resulting from using this software.
